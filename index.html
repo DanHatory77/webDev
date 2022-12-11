@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de pesquisa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario de pesquisa</h1>
+    <p id="description">Obrigado por colaborar com o desenvolvimento da nossa platarforma</>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" >Digite seu nome: <input id="name" name="name" type="text" required placeholder="digite seu nome aqui"/></label>
+         <label for="email" id="email-label" >Digite seu email: <input id="email" name="name" type="email" required placeholder="digite seu email aqui"/></label>
+          <label for="number" id="number-label" >Digite seu telefone: <input id="number" name="number" type="number" required min="1" max="1000000" placeholder="digite seu numero de telefone aqui"/>
+          </label>
+          <label for="dropdown">Como você nos descobriu?
+          <select id="dropdown" name="dropdown">
+            <option value="">(selecione uma opção)</option>
+            <option value="1">internet</option>
+            <option value="2">tv</option>
+          </select>
+        </label>
+        <label for="descri_option1">Você é maior de idade?
+        <label for="option1"><input id="option1" type="radio" name="option1" class="inline" value="option1" />Sim
+        <input id="option1" type="radio" name="option1" class="inline" value="option1" />Não</label>
+        </label>
+        <label for="descri_option1">Você sabe dirigir um automóvel?
+        <label for="option2"><input id="option2" type="radio" name="option2" class="inline" value="option2" />Sim 
+        <input id="option2" type="radio" name="option2" class="inline" value="option2" />Não</label>
+        </label>
+        <label for="descri_check">Se você respondeu sim para as perguntas anteriores, responda:
+        <label for="check"name="check">
+          <input id="check" type="checkbox" required name="check" class="inline" value="check"/> Sei dirigir carro.
+           <input id="check" type="checkbox" required name="check" class="inline" value="check"/> Sei dirigir moto.
+           <input id="check" type="checkbox" required name="check" class="inline" value="check"/> Sei dirigir carro e moto.
+        </label>
+
+        </label>
+        <label for="bio">Diga um pouco sobre você:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Exemplo: Gosto de viajar..."></textarea>
+          </label>
+        <input id="submit" type="submit" value="Submit" />
+        </fieldset>
+    </form>
+  </body>
+  </html>
